@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5278473B1BF99035002AEB51 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5278473A1BF99035002AEB51 /* MapKit.framework */; };
 		529FD67B1BF926B500DBDE8F /* BeachsideMobileAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 529FD67A1BF926B500DBDE8F /* BeachsideMobileAppTests.m */; };
+		60A7DE771C05337800D85C9F /* BeachsideMobileAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A7DE761C05337800D85C9F /* BeachsideMobileAppUITests.m */; };
 		AC05E3E219BED9AC00F27740 /* CalendarEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC05E3E119BED9AC00F27740 /* CalendarEditViewController.m */; };
 		AC1DCAB21988C87900B38747 /* BSCalendarViewDateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1DCAAF1988C87900B38747 /* BSCalendarViewDateButton.m */; };
 		AC1DCAB31988C87900B38747 /* BSDaysPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1DCAB11988C87900B38747 /* BSDaysPanel.m */; };
@@ -88,6 +89,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		60A7DE791C05337800D85C9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC41CB071983EDFE0050A798 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC41CB0E1983EDFE0050A798;
+			remoteInfo = BeachsideMobileApp;
+		};
 		AC41CB351983EDFF0050A798 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AC41CB071983EDFE0050A798 /* Project object */;
@@ -100,6 +108,9 @@
 /* Begin PBXFileReference section */
 		5278473A1BF99035002AEB51 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		529FD67A1BF926B500DBDE8F /* BeachsideMobileAppTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BeachsideMobileAppTests.m; path = BeachsideMobileAppTests/BeachsideMobileAppTests.m; sourceTree = SOURCE_ROOT; };
+		60A7DE741C05337800D85C9F /* BeachsideMobileAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeachsideMobileAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A7DE761C05337800D85C9F /* BeachsideMobileAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeachsideMobileAppUITests.m; sourceTree = "<group>"; };
+		60A7DE781C05337800D85C9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC05E3E019BED9AC00F27740 /* CalendarEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarEditViewController.h; sourceTree = "<group>"; };
 		AC05E3E119BED9AC00F27740 /* CalendarEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarEditViewController.m; sourceTree = "<group>"; };
 		AC1DCAAE1988C87900B38747 /* BSCalendarViewDateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSCalendarViewDateButton.h; sourceTree = "<group>"; };
@@ -253,6 +264,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		60A7DE711C05337800D85C9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC41CB0C1983EDFE0050A798 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +298,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60A7DE751C05337800D85C9F /* BeachsideMobileAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				60A7DE761C05337800D85C9F /* BeachsideMobileAppUITests.m */,
+				60A7DE781C05337800D85C9F /* Info.plist */,
+			);
+			path = BeachsideMobileAppUITests;
+			sourceTree = "<group>";
+		};
 		AC05E3DF19BED90300F27740 /* Editing Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -331,6 +358,7 @@
 			children = (
 				AC41CB181983EDFE0050A798 /* BeachsideMobileApp */,
 				AC41CB371983EDFF0050A798 /* BeachsideMobileAppTests */,
+				60A7DE751C05337800D85C9F /* BeachsideMobileAppUITests */,
 				AC41CB111983EDFE0050A798 /* Frameworks */,
 				AC41CB101983EDFE0050A798 /* Products */,
 			);
@@ -341,6 +369,7 @@
 			children = (
 				AC41CB0F1983EDFE0050A798 /* BeachsideMobileApp.app */,
 				AC41CB301983EDFF0050A798 /* BeachsideMobileApp.xctest */,
+				60A7DE741C05337800D85C9F /* BeachsideMobileAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -699,6 +728,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		60A7DE731C05337800D85C9F /* BeachsideMobileAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60A7DE7D1C05337800D85C9F /* Build configuration list for PBXNativeTarget "BeachsideMobileAppUITests" */;
+			buildPhases = (
+				60A7DE701C05337800D85C9F /* Sources */,
+				60A7DE711C05337800D85C9F /* Frameworks */,
+				60A7DE721C05337800D85C9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60A7DE7A1C05337800D85C9F /* PBXTargetDependency */,
+			);
+			name = BeachsideMobileAppUITests;
+			productName = BeachsideMobileAppUITests;
+			productReference = 60A7DE741C05337800D85C9F /* BeachsideMobileAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		AC41CB0E1983EDFE0050A798 /* BeachsideMobileApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC41CB411983EDFF0050A798 /* Build configuration list for PBXNativeTarget "BeachsideMobileApp" */;
@@ -743,6 +790,10 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Dilarc;
 				TargetAttributes = {
+					60A7DE731C05337800D85C9F = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = AC41CB0E1983EDFE0050A798;
+					};
 					AC41CB0E1983EDFE0050A798 = {
 						DevelopmentTeam = C43DL64R55;
 						SystemCapabilities = {
@@ -771,11 +822,19 @@
 			targets = (
 				AC41CB0E1983EDFE0050A798 /* BeachsideMobileApp */,
 				AC41CB2F1983EDFF0050A798 /* BeachsideMobileAppTests */,
+				60A7DE731C05337800D85C9F /* BeachsideMobileAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		60A7DE721C05337800D85C9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC41CB0D1983EDFE0050A798 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -799,6 +858,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		60A7DE701C05337800D85C9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60A7DE771C05337800D85C9F /* BeachsideMobileAppUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		AC41CB0B1983EDFE0050A798 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -878,6 +945,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		60A7DE7A1C05337800D85C9F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC41CB0E1983EDFE0050A798 /* BeachsideMobileApp */;
+			targetProxy = 60A7DE791C05337800D85C9F /* PBXContainerItemProxy */;
+		};
 		AC41CB361983EDFF0050A798 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = AC41CB0E1983EDFE0050A798 /* BeachsideMobileApp */;
@@ -913,6 +985,43 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		60A7DE7B1C05337800D85C9F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BeachsideMobileAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = CS604.BeachsideMobileAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BeachsideMobileApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		60A7DE7C1C05337800D85C9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = BeachsideMobileAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = CS604.BeachsideMobileAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BeachsideMobileApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		AC41CB3F1983EDFF0050A798 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1078,6 +1187,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		60A7DE7D1C05337800D85C9F /* Build configuration list for PBXNativeTarget "BeachsideMobileAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60A7DE7B1C05337800D85C9F /* Debug */,
+				60A7DE7C1C05337800D85C9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		AC41CB0A1983EDFE0050A798 /* Build configuration list for PBXProject "BeachsideMobileApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
